@@ -14,6 +14,7 @@ export default function Header() {
                 <li><Link href="/menu" className="font-playfair text-sm text-white">Menu</Link></li>
                 <li><Link href="/about" className="font-playfair text-sm text-white">About</Link></li>
                 <li><Link href="/contact" className="font-playfair text-sm text-white">Contact</Link></li>
+                <li><Link href="/users" className="font-playfair text-sm text-white">Our Team</Link></li>
             </ul>
             <Button>Sign In</Button>
         </div>
