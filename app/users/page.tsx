@@ -1,4 +1,3 @@
-
 // import { useEffect, useState } from "react"
 export interface User {
   id: number,
@@ -25,15 +24,6 @@ export interface User {
 
 
 export default async function ProductPage() {
-  // const [users, setUsers] = useState<User[]>([])
-  // useEffect(()=>{
-  //   const fetchUsers = async ()=>{
-  //     const response = await fetch("https://jsonplaceholder.typicode.com/users")
-  //     const data = await response.json()
-  //     setUsers(data)
-  //   }
-  //   fetchUsers()
-  // },[])
 
   const userData = await fetch("https://jsonplaceholder.typicode.com/users")
   const users: User[] = await userData.json()
