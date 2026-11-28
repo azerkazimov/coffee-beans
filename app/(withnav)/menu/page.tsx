@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Coffee Shop | Menu',
+  description: 'Menu Page',
+};
+
 export default function Menu() {
   return (
     <div>

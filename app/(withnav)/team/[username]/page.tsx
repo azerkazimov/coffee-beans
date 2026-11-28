@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Coffee Shop | Team',
+  description: 'Team Page',
+};
+
 export async function generateStaticParams() {
     return [
         {username: "mojombo"},
@@ -7,7 +12,7 @@ export async function generateStaticParams() {
 }
 
 async function UserRepos({ username }: { username: string }) {
-    await new Promise((resolve) => setTimeout(resolve, 6000));
+    await new Promise((resolve) => setTimeout(resolve, 2000));
   
     const response = await fetch(
       `https://api.github.com/users/${username}/repos`
